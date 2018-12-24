@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>13E71BED-32F5-4ED3-8331-631B4F00AC7E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>GDRMERGUANGMobile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>81171A62FEB40D534C02A5D475D68FF0B736A62C</key>
+		<string>http://192.168.0.243/GDRMMobileErGuang.git</string>
+		<key>CC9E6813401FC20BF860D9A1BE28999344063381</key>
+		<string>http://192.168.0.243/guizhouluzheng.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>GDRMERGUANGMobile.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>81171A62FEB40D534C02A5D475D68FF0B736A62C</key>
+		<string>../..</string>
+		<key>CC9E6813401FC20BF860D9A1BE28999344063381</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://192.168.0.243/GDRMMobileErGuang.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>81171A62FEB40D534C02A5D475D68FF0B736A62C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CC9E6813401FC20BF860D9A1BE28999344063381</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>81171A62FEB40D534C02A5D475D68FF0B736A62C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CDRMMobileErGuang</string>
+		</dict>
+	</array>
+</dict>
+</plist>
