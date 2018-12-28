@@ -264,6 +264,7 @@ typedef enum {
     self.textbadwound.text=[NSString stringWithFormat:@"%d",badwoundsum.integerValue];
     self.textdeath.text=[NSString stringWithFormat:@"%d",deathsum.integerValue];
     
+    
     CaseInfo *caseInfo=[CaseInfo caseInfoForID:caseID];
     if (caseInfo){
         caseInfo.case_reason=_textreason.text;
@@ -273,8 +274,8 @@ typedef enum {
         caseInfo.death_sum= NSStringNilIsBadReturn0([NSString stringWithFormat:@"%d",deathsum.integerValue]);
         caseInfo.case_type=_textCaseType.text;
         caseInfo.case_style=_textCaseStyle.text;
-    }    
-    
+    }
+
     CaseProveInfo *caseProveInfo = [CaseProveInfo proveInfoForCase:caseID];
     if (!caseProveInfo){
         if (![caseID isEmpty]){

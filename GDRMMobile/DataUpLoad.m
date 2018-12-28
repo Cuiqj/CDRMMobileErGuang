@@ -12,6 +12,9 @@
 #import "UploadRecord.h"
 #import "CasePhoto.h"
 
+#import "InspectionRecord.h"
+#import "CaseInfo.h"
+
 //所需上传的表名称
 //modify by lxm 2013.05.13
 static NSString *dataNameArray[UPLOADCOUNT]={@"Project",@"Task",@"AtonementNotice",@"CaseDeformation",@"CaseInfo",@"CaseInquire",@"CaseProveInfo",@"CaseServiceFiles",@"CaseServiceReceipt",@"Citizen",@"RoadWayClosed",@"Inspection",@"InspectionCheck",@"InspectionOutCheck",@"InspectionPath",@"InspectionRecord",@"ParkingNode",@"CaseMap",@"ConstructionChangeBack",@"TrafficRecord",@"InspectionConstruction",@"CasePhoto"};
@@ -59,8 +62,10 @@ static NSString *dataNameArray[UPLOADCOUNT]={@"Project",@"Task",@"AtonementNotic
 
 - (void)uploadDataAtIndex:(NSInteger)index{
     NSString *currentDataName = dataNameArray[index];
-
     NSArray *dataArray = [NSClassFromString(currentDataName) uploadArrayOfObject];
+    
+    
+    
     if (dataArray.count > 0) {
         if ([currentDataName isEqualToString:@"CasePhoto"]) {
             NSString *dataXML = @"";
@@ -80,6 +85,27 @@ static NSString *dataNameArray[UPLOADCOUNT]={@"Project",@"Task",@"AtonementNotic
             NSString *dataTypeString = [NSClassFromString(currentDataName) complexTypeString];
             NSString *dataXML = @"";
             for (id obj in dataArray) {
+                if([currentDataName isEqualToString:@"InspectionRecord"]){
+                    InspectionRecord * obj = (InspectionRecord *)obj;
+                    if(obj.inspection_id.length <=0){
+                        continue;
+                    }
+                }
+                if([currentDataName isEqualToString:@"CaseInfo"]){
+                    CaseInfo * obj = (CaseInfo *)obj;
+                    if (obj.badcar_sum.length <= 0){
+                        obj.badcar_sum = @"0";
+                    }
+                    if (obj.badwound_sum.length <= 0){
+                        obj.badwound_sum = @"0";
+                    }
+                    if (obj.fleshwound_sum.length <= 0){
+                        obj.fleshwound_sum = @"0";
+                    }
+                    if (obj.death_sum.length <= 0){
+                        obj.death_sum = @"0";
+                    }
+                }
                 dataXML = [dataXML stringByAppendingString:[obj dataXMLString]];
                 [_uploadedRecord addUploadedRecord:currentDataName WitdData:obj];
             }
