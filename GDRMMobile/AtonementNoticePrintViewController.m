@@ -429,4 +429,10 @@ static NSString * xmlName = @"AtonementNoticeTable";
     [formator setDateFormat:@"yyyy     年      MM      月      dd      日"];
     self.TextDateSend.text = [formator stringFromDate:self.notice.date_send];
 }
+- (void)deleteCurrentDoc{
+    NSManagedObjectContext * context = [[AppDelegate App] managedObjectContext];
+    [context deleteObject:self.notice];
+    [[AppDelegate App] saveContext];
+}
+
 @end

@@ -63,9 +63,7 @@ static NSString *dataNameArray[UPLOADCOUNT]={@"Project",@"Task",@"AtonementNotic
 - (void)uploadDataAtIndex:(NSInteger)index{
     NSString *currentDataName = dataNameArray[index];
     NSArray *dataArray = [NSClassFromString(currentDataName) uploadArrayOfObject];
-    
-    
-    
+
     if (dataArray.count > 0) {
         if ([currentDataName isEqualToString:@"CasePhoto"]) {
             NSString *dataXML = @"";
