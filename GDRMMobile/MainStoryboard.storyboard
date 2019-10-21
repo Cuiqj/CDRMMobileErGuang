@@ -2399,7 +2399,7 @@
             <objects>
                 <viewController title="出行前检查" id="ubn-AR-JCk" customClass="NewInspectionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mrQ-5Q-vth">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="awo-4j-taJ">
@@ -2453,15 +2453,15 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="39" sectionHeaderHeight="22" sectionFooterHeight="22" id="Z9M-Zr-tkB">
-                                <rect key="frame" x="20" y="201" width="984" height="396"/>
+                                <rect key="frame" x="20" y="201" width="500" height="396"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="CheckItemCell" textLabel="tdE-Eh-IzC" detailTextLabel="1S6-SA-rYW" style="IBUITableViewCellStyleValue1" id="LaG-2u-6yx">
-                                        <rect key="frame" x="0.0" y="22" width="984" height="39"/>
+                                        <rect key="frame" x="0.0" y="22" width="500" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LaG-2u-6yx" id="qxO-AY-Muk">
-                                            <rect key="frame" x="0.0" y="0.0" width="984" height="38.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="500" height="38.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tdE-Eh-IzC">
@@ -2472,7 +2472,7 @@
                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1S6-SA-rYW">
-                                                    <rect key="frame" x="925" y="9" width="44" height="20.5"/>
+                                                    <rect key="frame" x="441" y="9" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2521,7 +2521,7 @@
                                 </connections>
                             </textField>
                             <navigationBar contentMode="scaleToFill" id="hfU-XQ-Zg0">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="出行前检查" id="IEq-iS-VNK">
@@ -2591,6 +2591,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="620"/>
                     <connections>
                         <outlet property="inputView" destination="SIR-fS-tgw" id="wdj-j3-5S5"/>
                         <outlet property="pickerCheckItemDetails" destination="B43-Dr-OPZ" id="mQU-1P-OBa"/>
@@ -2605,14 +2606,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ENB-bA-4N0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2418" y="7428"/>
+            <point key="canvasLocation" x="1983" y="7443"/>
         </scene>
         <!--巡查交班-->
         <scene sceneID="aHz-kL-H6B">
             <objects>
                 <viewController title="巡查交班" id="U12-zV-BrE" customClass="InspectionOutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yK5-5p-Dc4">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="结束时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="odE-vK-llQ">
@@ -2633,7 +2634,7 @@
                                 </connections>
                             </textField>
                             <navigationBar contentMode="scaleToFill" id="vGr-wT-Gm5">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="巡查交班" id="5pO-GP-Xml">
@@ -2756,6 +2757,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="620"/>
                     <connections>
                         <outlet property="inputView" destination="jzP-kO-kik" id="h9z-Jf-l6s"/>
                         <outlet property="pickerCheckItemDetails" destination="vnO-Fp-ivW" id="F7h-Pk-KFb"/>
@@ -2768,7 +2770,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbd-ZY-HRW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3037" y="7428"/>
+            <point key="canvasLocation" x="2916" y="7422"/>
         </scene>
         <!--组织机构弹出选择窗-->
         <scene sceneID="rCM-7v-MXM">
@@ -2986,15 +2988,15 @@
                                 <color key="backgroundColor" red="0.95588648319244385" green="0.96546053886413574" blue="0.97033345699310303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CFd-hi-Reg">
-                                <rect key="frame" x="330" y="20" width="687.5" height="725.5"/>
+                                <rect key="frame" x="330" y="20" width="688" height="726"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" textLabel="eon-g1-PtM" detailTextLabel="soA-mf-FVJ" style="IBUITableViewCellStyleSubtitle" id="Ata-s0-qIY">
-                                        <rect key="frame" x="0.0" y="22" width="687.5" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="688" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ata-s0-qIY" id="giX-H0-YtY">
-                                            <rect key="frame" x="0.0" y="0.0" width="654.5" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="655" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eon-g1-PtM">
@@ -3298,7 +3300,7 @@
                                 <size key="shadowOffset" width="3" height="2"/>
                             </label>
                             <tableView clipsSubviews="YES" tag="1000" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qXn-gw-M1T">
-                                <rect key="frame" x="2.5" y="417" width="388" height="350"/>
+                                <rect key="frame" x="3" y="417" width="388" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -3389,11 +3391,11 @@
             <objects>
                 <viewController storyboardIdentifier="OrgSyncVC" id="zqZ-8f-7qS" customClass="OrgSyncViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uf3-M8-4nL">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="framebg.png" id="nT2-Jd-nEN">
-                                <rect key="frame" x="0.0" y="44" width="540" height="724"/>
+                                <rect key="frame" x="0.0" y="44" width="540" height="576"/>
                                 <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                             </imageView>
@@ -3412,7 +3414,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" id="76r-fj-WOd">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="服务器设置" id="ISM-31-Fey">
@@ -3442,6 +3444,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="620"/>
                     <connections>
                         <outlet property="textServerAddress" destination="qok-wD-l1j" id="bTn-hr-YCE"/>
                         <outlet property="versionName" destination="B54-s6-mb6" id="j6Y-uS-3qK"/>
@@ -5136,7 +5139,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="meP-Bj-sp0">
-                                <rect key="frame" x="0.5" y="1" width="47" height="350"/>
+                                <rect key="frame" x="1" y="1" width="47" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -6490,11 +6493,11 @@
             <objects>
                 <viewController title="勘验草图文字备注" modalPresentationStyle="formSheet" id="JKg-gA-agZ" customClass="PaintRemarkTextViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OVm-yi-fAG">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="YDx-cy-9E4">
-                                <rect key="frame" x="20" y="167" width="984" height="581"/>
+                                <rect key="frame" x="20" y="167" width="500" height="433"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -6504,7 +6507,7 @@
                                 </connections>
                             </textView>
                             <navigationBar contentMode="scaleToFill" id="I5j-YD-p5k">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="文字备注" id="h9X-Jg-RUB">
@@ -6574,6 +6577,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="620"/>
                     <connections>
                         <outlet property="remarkTextView" destination="YDx-cy-9E4" id="8VW-cK-IWd"/>
                         <outlet property="textDraftMan" destination="gRs-z6-o8h" id="ZA8-U2-0Qa"/>
@@ -6905,7 +6909,7 @@
                                 <size key="shadowOffset" width="3" height="2"/>
                             </label>
                             <tableView clipsSubviews="YES" tag="1000" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="w0c-Uu-rry">
-                                <rect key="frame" x="2.5" y="417" width="388" height="350"/>
+                                <rect key="frame" x="3" y="417" width="388" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
@@ -8172,7 +8176,7 @@
             <objects>
                 <viewController modalPresentationStyle="formSheet" id="y6T-va-YmQ" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i1o-ae-APX">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="framebg.png" id="and-Bn-rbS">
@@ -8180,7 +8184,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" id="OgK-ZV-lEa">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="操作员及执法人员登录" id="O9T-jO-WKL">
@@ -8273,6 +8277,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="620"/>
                     <connections>
                         <outlet property="textInspector1" destination="hke-fA-Dh7" id="r4e-cg-2UF"/>
                         <outlet property="textInspector2" destination="sws-Ny-3Ip" id="HYJ-i7-dfU"/>
@@ -8337,7 +8342,7 @@
             <objects>
                 <viewController title="添加新巡查记录" id="tk9-Hz-oiw" customClass="AddNewInspectRecordViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D5k-oP-4we">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="nHM-79-mQN">
@@ -8430,7 +8435,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" id="VbV-gH-3c8">
-                                <rect key="frame" x="0.0" y="192" width="540" height="516"/>
+                                <rect key="frame" x="0.0" y="44" width="540" height="516"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="S47-fe-c8k">
@@ -8592,7 +8597,7 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" id="ctv-IC-7ba">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="新增巡查记录" id="NN3-C9-l4F">
@@ -8653,6 +8658,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="540" height="620"/>
                     <connections>
                         <outlet property="contentView" destination="VbV-gH-3c8" id="GED-x8-3bP"/>
                         <outlet property="textCheckHandle" destination="OKQ-XF-XHg" id="uIA-Th-Dua"/>
@@ -9581,7 +9587,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="送达文书名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="94g-uf-ttF">
-                                <rect key="frame" x="20" y="68.5" width="102" height="21"/>
+                                <rect key="frame" x="20" y="69" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -9615,7 +9621,7 @@
                                 </connections>
                             </textField>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="送达人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uNe-GG-gCm">
-                                <rect key="frame" x="20" y="164.5" width="51" height="21"/>
+                                <rect key="frame" x="20" y="164" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -9626,13 +9632,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="签收日期" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RPR-rj-Pgl">
-                                <rect key="frame" x="20" y="260.5" width="68" height="21"/>
+                                <rect key="frame" x="20" y="260" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="D64-mw-jCh">
-                                <rect key="frame" x="20" y="307.5" width="500" height="30"/>
+                                <rect key="frame" x="20" y="307" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
