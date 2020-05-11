@@ -2777,19 +2777,19 @@
             <objects>
                 <viewController title="组织机构弹出选择窗" id="lLP-9a-dcl" customClass="OrgSelectController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iLM-BO-qOT">
-                        <rect key="frame" x="0.0" y="0.0" width="1004" height="745"/>
+                        <rect key="frame" x="0.0" y="0.0" width="748" height="728"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="0f3-sF-dH4">
-                                <rect key="frame" x="0.0" y="44" width="1004" height="701"/>
+                                <rect key="frame" x="0.0" y="44" width="748" height="684"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="MyCell" textLabel="mFr-d9-tc5" detailTextLabel="ld3-s2-dcM" style="IBUITableViewCellStyleSubtitle" id="1IF-kN-TxG">
-                                        <rect key="frame" x="0.0" y="22" width="1004" height="44"/>
+                                        <rect key="frame" x="0.0" y="22" width="748" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1IF-kN-TxG" id="CxE-cQ-7fp">
-                                            <rect key="frame" x="0.0" y="0.0" width="937" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="681" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mFr-d9-tc5">
@@ -2818,7 +2818,7 @@
                                 </connections>
                             </tableView>
                             <navigationBar contentMode="scaleToFill" id="nEE-Ty-GDg">
-                                <rect key="frame" x="0.0" y="0.0" width="1004" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="748" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="机构选择" id="Ms1-Au-s3m">
@@ -2852,18 +2852,18 @@
             <objects>
                 <viewController storyboardIdentifier="datePicker" title="日期选择窗口" id="bpu-jQ-FCE" customClass="DateSelectController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d6S-6T-7Wh">
-                        <rect key="frame" x="0.0" y="0.0" width="1004" height="745"/>
+                        <rect key="frame" x="0.0" y="0.0" width="748" height="728"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="3Kk-gc-AYt">
-                                <rect key="frame" x="0.0" y="529" width="1004" height="216"/>
+                                <rect key="frame" x="0.0" y="512" width="748" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="352120468.92579699">
                                     <!--2012-02-28 11:14:28 +0000-->
                                 </date>
                             </datePicker>
                             <navigationBar contentMode="scaleToFill" id="unz-2S-paj">
-                                <rect key="frame" x="0.0" y="0.0" width="1004" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="748" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="日期选择" id="ggT-q1-Dad">
@@ -3508,43 +3508,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="654" height="356"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="人" lineBreakMode="tailTruncation" minimumFontSize="10" id="87Q-0v-9VC">
-                                <rect key="frame" x="253" y="17" width="28" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="人" lineBreakMode="tailTruncation" minimumFontSize="10" id="87Q-0v-9VC">
+                                <rect key="frame" x="462" y="17" width="28" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="人" lineBreakMode="tailTruncation" minimumFontSize="10" id="eLx-hg-dJg">
-                                <rect key="frame" x="412" y="17" width="23" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="人" lineBreakMode="tailTruncation" minimumFontSize="10" id="eLx-hg-dJg">
+                                <rect key="frame" x="220" y="17" width="23" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="辆" lineBreakMode="tailTruncation" minimumFontSize="10" id="DhM-qg-ZAf">
-                                <rect key="frame" x="600" y="17" width="21" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="辆" lineBreakMode="tailTruncation" minimumFontSize="10" id="DhM-qg-ZAf">
+                                <rect key="frame" x="610" y="17" width="21" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="轻伤" lineBreakMode="tailTruncation" minimumFontSize="10" id="XgG-1w-mi0">
-                                <rect key="frame" x="20" y="17" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="轻伤" lineBreakMode="tailTruncation" minimumFontSize="10" id="XgG-1w-mi0">
+                                <rect key="frame" x="262" y="17" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="重伤" lineBreakMode="tailTruncation" minimumFontSize="10" id="K1v-mi-blx">
-                                <rect key="frame" x="159" y="17" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="重伤" lineBreakMode="tailTruncation" minimumFontSize="10" id="K1v-mi-blx">
+                                <rect key="frame" x="383" y="17" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="死亡" lineBreakMode="tailTruncation" minimumFontSize="10" id="Bwi-R6-8fu">
-                                <rect key="frame" x="320" y="17" width="42" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="死亡" lineBreakMode="tailTruncation" minimumFontSize="10" id="Bwi-R6-8fu">
+                                <rect key="frame" x="141" y="17" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3564,8 +3564,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="损坏车辆" lineBreakMode="tailTruncation" minimumFontSize="10" id="Kxc-FA-SHo">
-                                <rect key="frame" x="472" y="16" width="68" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="损坏车辆" lineBreakMode="tailTruncation" minimumFontSize="10" id="Kxc-FA-SHo">
+                                <rect key="frame" x="495" y="16" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3585,8 +3585,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="u4n-4s-g7S">
-                                <rect key="frame" x="59" y="12" width="50" height="31"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="u4n-4s-g7S">
+                                <rect key="frame" x="299" y="12" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -3595,8 +3595,8 @@
                                     <outlet property="delegate" destination="5VN-wM-M7X" id="qed-38-hsM"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="OYZ-VO-qfV">
-                                <rect key="frame" x="200" y="12" width="50" height="31"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="OYZ-VO-qfV">
+                                <rect key="frame" x="420" y="12" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -3605,8 +3605,8 @@
                                     <outlet property="delegate" destination="5VN-wM-M7X" id="cAS-Fd-ZJk"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="lau-pD-zYl">
-                                <rect key="frame" x="360" y="12" width="50" height="31"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="lau-pD-zYl">
+                                <rect key="frame" x="179" y="12" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -3615,8 +3615,8 @@
                                     <outlet property="delegate" destination="5VN-wM-M7X" id="69r-W2-3Z5"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="pUm-3T-h4Q">
-                                <rect key="frame" x="548" y="11" width="50" height="31"/>
+                            <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="pUm-3T-h4Q">
+                                <rect key="frame" x="565" y="11" width="40" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -3663,8 +3663,8 @@
                                     <outlet property="delegate" destination="5VN-wM-M7X" id="cS3-VH-ZDg"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="人" lineBreakMode="tailTruncation" minimumFontSize="10" id="phb-rX-vvo">
-                                <rect key="frame" x="109" y="17" width="23" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="人" lineBreakMode="tailTruncation" minimumFontSize="10" id="phb-rX-vvo">
+                                <rect key="frame" x="341" y="17" width="23" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -3735,6 +3735,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="人" lineBreakMode="tailTruncation" minimumFontSize="10" id="8yB-Zg-bXm">
+                                <rect key="frame" x="99" y="17" width="23" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="受伤" lineBreakMode="tailTruncation" minimumFontSize="10" id="eHz-Zt-oCN">
+                                <rect key="frame" x="20" y="17" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="3" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Mw1-sC-oHe">
+                                <rect key="frame" x="58" y="12" width="40" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textChanged:" destination="5VN-wM-M7X" eventType="editingChanged" id="cks-GQ-k8s"/>
+                                    <outlet property="delegate" destination="5VN-wM-M7X" id="7AZ-jk-Fne"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.80726873874664307" green="0.82521450519561768" blue="0.84927487373352051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -3754,6 +3778,7 @@
                         <outlet property="textStartTime" destination="HdA-ps-43p" id="tX6-H7-aku"/>
                         <outlet property="textbadcar" destination="pUm-3T-h4Q" id="c1w-gw-amr"/>
                         <outlet property="textbadwound" destination="OYZ-VO-qfV" id="L3j-Rp-BcJ"/>
+                        <outlet property="textdamage" destination="Mw1-sC-oHe" id="R4D-2B-X2Y"/>
                         <outlet property="textdeath" destination="lau-pD-zYl" id="Z4Q-nn-bJA"/>
                         <outlet property="textfleshwound" destination="u4n-4s-g7S" id="eEN-Da-UXd"/>
                         <outlet property="textreason" destination="QUm-7X-Dg4" id="4gf-YG-CsD"/>
@@ -9508,11 +9533,11 @@
             <objects>
                 <viewController storyboardIdentifier="CaseCountDetailEditor" id="ePa-es-zin" customClass="CaseCountDetailEditorViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atA-vY-rGh">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" id="827-fs-zeu">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="赔补偿明细" id="i2B-kp-gMf">
@@ -9530,24 +9555,24 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="单价" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R58-Un-nPg">
-                                <rect key="frame" x="20" y="102" width="34" height="21"/>
+                                <rect key="frame" x="20" y="82" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="SY6-oi-Gw7">
-                                <rect key="frame" x="20" y="150" width="500" height="30"/>
+                                <rect key="frame" x="20" y="120" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="数量" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JNl-j0-NPf">
-                                <rect key="frame" x="20" y="198" width="34" height="21"/>
+                                <rect key="frame" x="20" y="159" width="34" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="BMV-sI-ZOI">
-                                <rect key="frame" x="20" y="245" width="500" height="30"/>
+                                <rect key="frame" x="20" y="196" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -9583,17 +9608,17 @@
             <objects>
                 <viewController storyboardIdentifier="ServiceFileEditor" id="REf-Py-RqQ" customClass="ServiceFileEditorViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c2l-nu-bBj">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <rect key="frame" x="0.0" y="0.0" width="540" height="620"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="送达文书名称" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="94g-uf-ttF">
-                                <rect key="frame" x="20" y="69" width="102" height="21"/>
+                                <rect key="frame" x="20" y="55" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <navigationBar contentMode="scaleToFill" id="9Vy-zW-hvG">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="540" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="送达回证明细" id="Xwa-Dz-Axk">
@@ -9611,7 +9636,7 @@
                                 </items>
                             </navigationBar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="7WO-Gy-v3Z">
-                                <rect key="frame" x="20" y="116" width="500" height="30"/>
+                                <rect key="frame" x="20" y="93" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -9621,35 +9646,35 @@
                                 </connections>
                             </textField>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="送达人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uNe-GG-gCm">
-                                <rect key="frame" x="20" y="164" width="51" height="21"/>
+                                <rect key="frame" x="20" y="132" width="51" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="DiC-5w-3fC">
-                                <rect key="frame" x="20" y="211" width="500" height="30"/>
+                                <rect key="frame" x="20" y="169" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="签收日期" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RPR-rj-Pgl">
-                                <rect key="frame" x="20" y="260" width="68" height="21"/>
+                                <rect key="frame" x="20" y="208" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="D64-mw-jCh">
-                                <rect key="frame" x="20" y="307" width="500" height="30"/>
+                                <rect key="frame" x="20" y="245" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="收件人签章" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ic2-I9-fKV">
-                                <rect key="frame" x="20" y="355" width="85" height="21"/>
+                                <rect key="frame" x="20" y="285" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="L1C-aL-sbo">
-                                <rect key="frame" x="20" y="404" width="500" height="30"/>
+                                <rect key="frame" x="20" y="323" width="500" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>

@@ -581,10 +581,10 @@ InspectionCheckState inspectionState;
         stationstring = @"";
     }
     NSMutableString *remark=[[NSMutableString alloc] initWithFormat:@"%@  巡至%@往%@方向%@时，发现%@驾驶%@%@在%@发生交通事故，",timeStr, [RoadSegment roadNameFromSegment:caseInfo.roadsegment_id], caseInfo.side,stationstring,citizen.party, citizen.automobile_number, citizen.automobile_pattern, caseInfo.place];
-    if ([caseInfo.fleshwound_sum intValue]==0 && [caseInfo.badwound_sum intValue]==0 && [caseInfo.death_sum intValue]==0) {
+    if ([caseInfo.damage_sum intValue]==0 && [caseInfo.death_sum intValue]==0) {
         [remark appendString:@"无人员伤亡，"];
     }else{
-        [remark appendFormat:@"轻伤%@人，重伤%@人，死亡%@人，", caseInfo.fleshwound_sum, caseInfo.badwound_sum, caseInfo.death_sum];
+        [remark appendFormat:@"受伤%@人，死亡%@人，", caseInfo.damage_sum, caseInfo.death_sum];
     }
     NSArray *deformArray=[CaseDeformation deformationsForCase:caseID forCitizen:citizen.automobile_number];
     if (deformArray.count>0) {

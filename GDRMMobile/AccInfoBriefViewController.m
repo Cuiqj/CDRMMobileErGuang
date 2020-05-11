@@ -31,6 +31,7 @@ typedef enum {
 
 @synthesize caseID =_caseID;
 @synthesize textdeath =_textdeath;
+@synthesize textdamage = _textdamage;
 @synthesize textbadcar =_textbadcar;
 @synthesize textreason =_textreason;
 @synthesize textbadwound =_textbadwound;
@@ -182,22 +183,22 @@ typedef enum {
     //一般事故：指一次造成重伤1-2人或者轻伤3人及3人以上
     //重大事故：指一次造成死亡1-2人或者重伤3-10人
     //特大事故：指一次造成死亡3人以上，或重伤11人及11人以上或者死亡1人同时重伤8人以上；或者死亡2人同时重伤5人以上
-    NSInteger deathNum=[_textdeath.text integerValue];
-    NSInteger badwoundNum=[_textbadwound.text integerValue];
-    NSInteger fleshwoundNum=[_textfleshwound.text integerValue];
-    if (fleshwoundNum>0 && fleshwoundNum<=2 && badwoundNum==0 && deathNum==0) {
-        _textCaseStyle.text= @"轻微事故";
-    } else if (badwoundNum<=2 && deathNum==0) {
-         _textCaseStyle.text = @"一般事故";
-    } else if (badwoundNum<11 && deathNum==0) {
-        _textCaseStyle.text = @"重大事故";
-    } else if (badwoundNum<8 && deathNum==1) {
-        _textCaseStyle.text = @"重大事故";
-    } else if (badwoundNum<5 && deathNum==2) {
-        _textCaseStyle.text = @"重大事故";
-    } else {
-        _textCaseStyle.text = @"特大事故";
-    }   
+//    NSInteger deathNum=[_textdeath.text integerValue];
+//    NSInteger badwoundNum=[_textbadwound.text integerValue];
+//    NSInteger fleshwoundNum=[_textfleshwound.text integerValue];
+//    if (fleshwoundNum>0 && fleshwoundNum<=2 && badwoundNum==0 && deathNum==0) {
+//        _textCaseStyle.text= @"轻微事故";
+//    } else if (badwoundNum<=2 && deathNum==0) {
+//         _textCaseStyle.text = @"一般事故";
+//    } else if (badwoundNum<11 && deathNum==0) {
+//        _textCaseStyle.text = @"重大事故";
+//    } else if (badwoundNum<8 && deathNum==1) {
+//        _textCaseStyle.text = @"重大事故";
+//    } else if (badwoundNum<5 && deathNum==2) {
+//        _textCaseStyle.text = @"重大事故";
+//    } else {
+//        _textCaseStyle.text = @"特大事故";
+//    }
 }
 
 //是否停驶
@@ -255,14 +256,17 @@ typedef enum {
     NSString *badcarsum=[_textbadcar.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *badwoundsum=[_textbadwound.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSString *deathsum=[_textdeath.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *damagesum=[_textdamage.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     fleshwoundsum=[fleshwoundsum isEmpty]?@"0":fleshwoundsum;
     badcarsum=[badcarsum isEmpty]?@"0":badcarsum;
     badwoundsum=[badwoundsum isEmpty]?@"0":badwoundsum;
     deathsum=[deathsum isEmpty]?@"0":deathsum;
+    damagesum=[damagesum isEmpty]?@"0":damagesum;
     self.textfleshwound.text=[NSString stringWithFormat:@"%d",fleshwoundsum.integerValue];
     self.textbadcar.text=[NSString stringWithFormat:@"%d",badcarsum.integerValue];
     self.textbadwound.text=[NSString stringWithFormat:@"%d",badwoundsum.integerValue];
     self.textdeath.text=[NSString stringWithFormat:@"%d",deathsum.integerValue];
+    self.textdamage.text = [NSString stringWithFormat:@"%d",damagesum.integerValue];
     
     
     CaseInfo *caseInfo=[CaseInfo caseInfoForID:caseID];
@@ -272,6 +276,7 @@ typedef enum {
         caseInfo.badwound_sum= NSStringNilIsBadReturn0([NSString stringWithFormat:@"%d",badwoundsum.integerValue]);
         caseInfo.fleshwound_sum= NSStringNilIsBadReturn0([NSString stringWithFormat:@"%d",fleshwoundsum.integerValue]);
         caseInfo.death_sum= NSStringNilIsBadReturn0([NSString stringWithFormat:@"%d",deathsum.integerValue]);
+        caseInfo.damage_sum= NSStringNilIsBadReturn0([NSString stringWithFormat:@"%d",damagesum.integerValue]);
         caseInfo.case_type=_textCaseType.text;
         caseInfo.case_style=_textCaseStyle.text;
     }
@@ -327,6 +332,7 @@ typedef enum {
         _textbadwound.text= caseInfo.badwound_sum;
         _textfleshwound.text=caseInfo.fleshwound_sum;
         _textdeath.text=caseInfo.death_sum;
+        _textdamage.text=caseInfo.damage_sum;
         _textreason.text=caseInfo.case_reason;
         _textCaseStyle.text=caseInfo.case_style;
         _textCaseType.text=caseInfo.case_type;

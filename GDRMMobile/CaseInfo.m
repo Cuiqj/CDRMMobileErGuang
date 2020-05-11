@@ -43,6 +43,7 @@ static NSString *lochus_code = @"";
 @dynamic peccancy_type;
 @dynamic case_character;
 @dynamic case_disposal;
+@dynamic damage_sum;
 
 - (NSString *) signStr{
     if (![self.myid isEmpty]) {

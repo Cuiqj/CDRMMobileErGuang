@@ -17,11 +17,16 @@
 @interface AccInfoBriefViewController : UIViewController<UITextFieldDelegate,setCaseTextDelegate,DatetimePickerHandler>
 
 @property (nonatomic,copy) NSString * caseID;
-
+//损坏车辆
 @property (nonatomic, weak) IBOutlet UITextField *textbadcar;
+//重伤
 @property (nonatomic, weak) IBOutlet UITextField *textbadwound;
+//死亡
 @property (nonatomic, weak) IBOutlet UITextField *textdeath;
 @property (nonatomic, weak) IBOutlet UITextField *textreason;
+//受伤
+@property (weak, nonatomic) IBOutlet UITextField *textdamage;
+//轻伤
 @property (nonatomic, weak) IBOutlet UITextField *textfleshwound;
 @property (weak, nonatomic) IBOutlet UITextField *textCaseStyle;
 @property (weak, nonatomic) IBOutlet UITextField *textCaseType;
