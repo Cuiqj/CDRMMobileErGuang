@@ -103,10 +103,10 @@
         caseStatusString = [caseStatusString stringByAppendingString:@"无人员伤亡。"];
     } else {
         if (caseInfo.damage_sum.integerValue != 0) {
-            caseStatusString = [caseStatusString stringByAppendingFormat:@"受伤%@人，",caseInfo.fleshwound_sum];
+            caseStatusString = [caseStatusString stringByAppendingFormat:@"%@人受伤，",caseInfo.damage_sum];
             if (caseInfo.death_sum.integerValue != 0) {
-                caseStatusString = [caseStatusString stringByAppendingFormat:@"死亡%@人。",caseInfo.death_sum];
-            }else if (caseInfo.death_sum.integerValue != 0) {
+                caseStatusString = [caseStatusString stringByAppendingFormat:@"%@人死亡。",caseInfo.death_sum];
+            }else if (caseInfo.death_sum.integerValue == 0) {
                 caseStatusString = [caseStatusString stringByReplacingOccurrencesOfString:@"，" withString:@"。"];
             }
         }else{
@@ -375,14 +375,14 @@
         if (citizenArray.count == 1) {
             Citizen *citizen = [citizenArray objectAtIndex:0];
             
-            caseDescString = [caseDescString stringByAppendingFormat:@"我于%@驾驶%@%@行至%@%@%@%@，因%@发生交通事故导致损坏公路路产。",happenDate,citizen.automobile_number,citizen.automobile_pattern,roadName,caseInfo.side,stationString,caseInfo.place,caseInfo.case_reason];
+            caseDescString = [caseDescString stringByAppendingFormat:@"我于%@驾驶%@%@行驶至%@%@%@%@，因%@发生交通事故导致损坏公路路产。",happenDate,citizen.automobile_number,citizen.automobile_pattern,roadName,caseInfo.side,stationString,caseInfo.place,caseInfo.case_reason];
             if(caseInfo.case_reason.length >0){
                 caseDescString = [caseDescString stringByReplacingOccurrencesOfString:@"发生交通事故" withString:@""];
             }
         }
         if (citizenArray.count > 1) {
             Citizen *citizen = [citizenArray objectAtIndex:0];
-            caseDescString = [caseDescString stringByAppendingFormat:@"我%@于%@驾驶%@%@行至%@%@%@，与",citizen.party,happenDate,citizen.automobile_number,citizen.automobile_pattern,roadName,caseInfo.side,stationString];
+            caseDescString = [caseDescString stringByAppendingFormat:@"我%@于%@驾驶%@%@行驶至%@%@%@，与",citizen.party,happenDate,citizen.automobile_number,citizen.automobile_pattern,roadName,caseInfo.side,stationString];
             for (int i = 1;i < citizenArray.count;i++) {
                 citizen = [citizenArray objectAtIndex:i];
                 if (i == 1) {
@@ -398,21 +398,20 @@
 }
 + (NSString *)generateWoundDesc:(NSString *)caseID{
     CaseInfo *caseInfo = [CaseInfo caseInfoForID:caseID];
-    
     //伤亡情况
     NSString *caseStatusString = @"事故中";
     if (caseInfo.death_sum.integerValue == 0 && caseInfo.damage_sum.integerValue == 0) {
         caseStatusString = [caseStatusString stringByAppendingString:@"无人员伤亡。"];
     } else {
         if (caseInfo.damage_sum.integerValue != 0) {
-            caseStatusString = [caseStatusString stringByAppendingFormat:@"受伤%@人，",caseInfo.damage_sum];
+            caseStatusString = [caseStatusString stringByAppendingFormat:@"%@人受伤，",caseInfo.damage_sum];
             if (caseInfo.death_sum.integerValue != 0) {
-                caseStatusString = [caseStatusString stringByAppendingFormat:@"死亡%@人。",caseInfo.death_sum];
-            }else if (caseInfo.death_sum.integerValue != 0) {
+                caseStatusString = [caseStatusString stringByAppendingFormat:@"%@人死亡。",caseInfo.death_sum];
+            }else if (caseInfo.death_sum.integerValue == 0) {
                 caseStatusString = [caseStatusString stringByReplacingOccurrencesOfString:@"，" withString:@"。"];
             }
         }else{
-            caseStatusString = [caseStatusString stringByAppendingFormat:@"死亡%@人。",caseInfo.death_sum];
+            caseStatusString = [caseStatusString stringByAppendingFormat:@"%@人死亡。",caseInfo.death_sum];
         }
     }
     return caseStatusString;
@@ -441,7 +440,7 @@
             }
         }
         
-        payReason = [NSString stringWithFormat:@"你违反了%@规定，根据%@规定，我们依法向你收取路产赔偿，赔偿标准为广东省交通厅、财政厅和物价局联合颁发的%@文件的规定，请问你有无异议？",breakStr, matchStr, payStr];
+        payReason = [NSString stringWithFormat:@"依%@规定，根据%@规定，我们依法向你收取路产赔偿，赔偿标准为广东省交通厅、财政厅和物价局联合颁发的%@文件的规定，请问你有无异议？",breakStr, matchStr, payStr];
         
     }
     return payReason;

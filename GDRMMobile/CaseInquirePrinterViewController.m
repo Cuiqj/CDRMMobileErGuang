@@ -493,4 +493,11 @@ enum kPageInfo {
     return dataInfo;
 }
 
+- (void)deleteCurrentDoc{
+    if (![self.caseID isEmpty] && self.caseInquire){
+        [[[AppDelegate App] managedObjectContext] deleteObject:self.caseInquire];
+        [[AppDelegate App] saveContext];
+        self.caseInquire = nil;
+    }
+}
 @end

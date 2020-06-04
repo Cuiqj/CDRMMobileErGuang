@@ -155,7 +155,7 @@
                 <size width="100" height="6" />
             </Text>
             <Text>
-                <text>第 页</text>
+                <text>第  页</text>
                 <origin x="157" y="251" />
                 <size width="100" height="6" />
             </Text>
@@ -357,7 +357,7 @@
         
         <!--页码-->
         <UITextField>
-            <origin x="136" y="247" />
+            <origin x="136" y="249" />
             <size width="15" height="6" />
             <fontSize>12</fontSize>
             <alignment>center</alignment>
@@ -369,7 +369,7 @@
             </content>
         </UITextField>
         <UITextField>
-            <origin x="157" y="247" />
+            <origin x="158" y="249" />
             <size width="11" height="6" />
             <fontSize>12</fontSize>
             <alignment>center</alignment>

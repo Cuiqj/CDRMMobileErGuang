@@ -864,11 +864,12 @@ enum kUITextFieldTag {
     NSString *organizationName = [[OrgInfo orgInfoForOrgID:[UserInfo userInfoForUserID:currentUserID].organization_id] valueForKey:@"orgname"];
     NSString* text = [NSString stringWithFormat:@"%@%@%@",@"问：你好，我们是",organizationName,@"的路政员，请你将车辆损坏公路路产的详细经过讲述一遍，你要如实反映，不得弄虚作假，否则将承担法律责任。你明白吗？\n" ];
     text = [NSString stringWithFormat:@"%@%@%@\n",text,@"答：明白，",[CaseProveInfo generateEventDescForInquire:self.caseID] ];
-     text = [NSString stringWithFormat:@"%@%@ ",text,@"问：事故发生前连续驾车时间及车速是多少？\n答：我连续驾车X小时，车速是每小时X公里。\n" ];
-    text = [NSString stringWithFormat:@"%@%@",text,@"问：事故中多少名人员受伤？\n答：" ];
+     text = [NSString stringWithFormat:@"%@%@ ",text,@"问：事故发生前连续驾车时间及车速是多少？\n答：我连续驾车X小时，车速是每小时X公里。" ];
+    text = [NSString stringWithFormat:@"%@%@",text,@"\n问：事故中多少名人员受伤？\n答：" ];
     text = [NSString stringWithFormat:@"%@%@\n",text,[CaseProveInfo generateWoundDesc:self.caseID] ];
     text = [NSString stringWithFormat:@"%@问：%@\n",text,[CaseProveInfo generateDefaultPayReason:self.caseID] ];
     text = [NSString stringWithFormat:@"%@%@",text,@"答：无异议。\n问：你还有什么补充的吗？\n答：没有。" ];
+    text = [NSString stringWithFormat:@"%@%@",text,@"\n问：你对以上笔录如无异议请签字捺印？\n答：好。" ];
     return text;
 }
 @end

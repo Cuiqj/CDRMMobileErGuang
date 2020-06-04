@@ -584,7 +584,7 @@ InspectionCheckState inspectionState;
     if ([caseInfo.damage_sum intValue]==0 && [caseInfo.death_sum intValue]==0) {
         [remark appendString:@"无人员伤亡，"];
     }else{
-        [remark appendFormat:@"受伤%@人，死亡%@人，", caseInfo.damage_sum, caseInfo.death_sum];
+        [remark appendFormat:@"%@人受伤，%@人死亡，", caseInfo.damage_sum, caseInfo.death_sum];
     }
     NSArray *deformArray=[CaseDeformation deformationsForCase:caseID forCitizen:citizen.automobile_number];
     if (deformArray.count>0) {
