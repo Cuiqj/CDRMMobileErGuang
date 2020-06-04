@@ -108,7 +108,7 @@ static NSString * xmlName = @"AtonementNoticeTable";
     CaseProveInfo *proveInfo = [CaseProveInfo proveInfoForCase:self.caseID];
     self.textParty.text = citizen.party;
     self.textPartyAddress.text = citizen.address;
-    self.textCaseReason.text = [NSString stringWithFormat:@"%@%@因%@%@", citizen.automobile_number, citizen.automobile_pattern, caseInfo.case_reason,proveInfo.case_short_desc];
+    self.textCaseReason.text = [NSString stringWithFormat:@"%@%@因交通事故%@", citizen.automobile_number, citizen.automobile_pattern,proveInfo.case_short_desc];
     self.textOrg.text = self.notice.organization_id;
     self.textViewCaseDesc.text = self.notice.case_desc;
     

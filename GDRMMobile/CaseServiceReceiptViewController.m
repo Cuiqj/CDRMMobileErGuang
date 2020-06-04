@@ -49,7 +49,7 @@ static NSString * const xmlName = @"ServiceReceiptTable";
     self.textMark2.text = caseInfo.case_mark2;
     self.textMark3.text = caseInfo.full_case_mark3;
     self.textincepter_name.text = self.caseServiceReceipt.incepter_name;
-    self.textreason.text = [NSString stringWithFormat:@"%@%@因%@%@", citizen.automobile_number, citizen.automobile_pattern,caseInfo.case_reason, proveInfo.case_short_desc];
+    self.textreason.text = [NSString stringWithFormat:@"%@%@因交通事故%@", citizen.automobile_number, citizen.automobile_pattern,proveInfo.case_short_desc];
     self.textservice_company.text = self.caseServiceReceipt.service_company;
     
     //修改“左，右”为“左侧，右侧”

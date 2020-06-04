@@ -212,7 +212,7 @@
         <!--询问地点-->
         <UITextField>
             <origin x="112.4" y="55" />
-            <size width = "70" height = "6" />
+            <size width = "67.5" height = "6" />
             <fontSize>12</fontSize>
             <content>
                 <data>
