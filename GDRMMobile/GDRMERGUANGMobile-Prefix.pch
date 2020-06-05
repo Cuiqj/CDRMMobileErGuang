@@ -46,7 +46,7 @@
 
 
 #define VERSION_NAME @"二广路政"
-#define VERSION_TIME @"2020年06月04日"
+#define VERSION_TIME @"2020年06月05日"
 
 /*
  *add by lxm
